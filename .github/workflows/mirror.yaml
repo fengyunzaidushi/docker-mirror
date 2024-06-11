@@ -6,11 +6,11 @@ on:
       IMAGE_NAME:
         description: '原镜像名称'
         required: true
-        default: 'mysql/mysql-server'
+        default: 'tiangolo/uvicorn-gunicorn-fastapi'
       NEW_NAME:
         description: '同步后镜像名称'
         required: true
-        default: 'mysql-server'
+        default: 'tiangolo/uvicorn-gunicorn-fastapi'
       IMAGE_VERSION:
         description: '镜像版本'
         required: true
@@ -22,7 +22,7 @@ on:
       TARGET_REPOSITORY:
         description: '空间名称'
         required: true
-        default: 'dockerhub_mirror'
+        default: 'docker_fxy'
 
 jobs:
   build:
